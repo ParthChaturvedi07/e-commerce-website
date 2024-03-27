@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Fashion Ecommerce Full Website</title>
+</head>
+<body>
+    <header id="header">
+        <a href="/" class="logo">Shop</a>
+        <ul class="nav">
+            <li><a href="#" onclick="scrollToTop();"><ion-icon name="home-outline"></ion-icon></a></li>
+            <li><a href="#" onclick="scrollToSection('about');">About</a></li>
+            <li><a href="#" onclick="scrollToSection('products');">Shopping</a></li>
+            <li><a href="#" onclick="scrollToSection('contact');">Contact us</a></li>
+        </ul>
+        <ul class="util">
+            <li><a href="#"><ion-icon name="search-outline"></ion-icon></a>
+            </li>
+            <li><a href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            <li><a href="#"><ion-icon name="heart-outline"></ion-icon></a>
+            </li>
+            <li><a href="#"><ion-icon name="bag-outline"></ion-icon></a>
+            <span class="number">8</span>
+            </li>
+        </ul>
+    <!-- Add a menu icon on mobile view -->
+    <a href="" class="menu" onclick="toggleMenu();"><ion-icon name="apps-outline"></ion-icon></a>
+    </header>
+    <!-- Mobile View Navigation -->
+    <ul class="nav-mobile">
+        <li>
+            <a href="#" onclick="scrollToTop();">
+                <ion-icon name="home-outline"></ion-icon></a>
+        </li>
+        <li><a href="#about" onClick="toggleMenu();">about</a></li>
+        <li><a href="#shopping" onClick="toggleMenu();">shopping</a></li>
+        <li><a href="#contact us" onClick="toggleMenu();">contact us</a></li>
+    </ul>
+    <div id="banner" class="banner ">
+        <!-- Left Part -->
+        <div class="women">
+            <img src="./img/photo-1609505848912-b7c3b8b4beda.jpg" alt="">
+        <a href="#" class="switch-btn" onclick="switchBanner('left');">Women</a>
+        <div class="content">
+            <h1>Ladies' Fashion</h1>
+            <p>
+            Women's fashion is a vibrant reflection of personal style and cultural trends. 
+            It encompasses a rich tapestry of choices, from classic pieces to avant-garde
+            designs, allowing women to express their individuality and creativity through 
+            clothing and accessories.
+            </p>
+        <a href="#">Shop Around <ion-icon name="cart-outline"></ion-icon></a>
+        </div>
+        </div>
+        <!-- Middle Part -->
+        <div class="men">
+            <img src="https://images.unsplash.com/photo-1610384104075-e05c8cf200c3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <a href="#" class="switch-btn" onclick="switchBanner('middle');">Men</a>
+        <div class="content">
+            <h1>Men With Taste</h1>
+            <p>
+            Discover the essence of personal style with our curated collection of men's fashion. 
+            Embrace the perfect blend of tradition and contemporary flair, where timeless classics 
+            meet modern trends. From sophisticated suits to casual chic, our range offers versatile 
+            options for every occasion. Explore our selection and find the pieces that resonate with
+            your unique personality, allowing you to express yourself confidently through fashion. 
+            Experience the art of dressing well with us.
+            </p>
+        <a href="#">Shop Around <ion-icon name="cart-outline"></ion-icon></a>
+        </div>
+        </div>
+        <!-- Right Part -->
+        <div class="special">
+            <img src="https://images.unsplash.com/photo-1598915850252-fb07ad1e6768?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <a href="#" class="switch-btn" onclick="switchBanner('right');">Special</a>
+        <div class="content">
+            <h1>Old Money</h1>
+            <p>
+            Old money aesthetics embody timeless elegance and sophistication. This style is characterized 
+            by classic, well-tailored pieces that exude luxury without being overtly flashy. It's about
+            quality craftsmanship, heritage, and a refined sense of style that stands the test of time.
+            </p>
+        <a href="#">Shop Around <ion-icon name="cart-outline"></ion-icon></a>
+        </div>
+        </div>
+        <a href="#" class="reset" onclick="resetBanner();"
+        ><ion-icon name="power-outline"></ion-icon
+        ></a>
+    </div>  
+    <!-- Main Section -->
+    <main>
+     <!-- Call Up Section -->
+        <section class="call-up">
+            <div class="call-up-box">
+                <ion-icon name="send-outline"></ion-icon>
+                <div>
+                    <h4>Free Shipping</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!                       
+                    </p>
+                </div>
+            </div>
+            <div class="call-up-box">
+                <ion-icon name="card-outline"></ion-icon>
+                <div>
+                    <h4>Security Payment</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!                       
+                    </p>
+                </div>
+            </div>
+            <div class="call-up-box">
+                <ion-icon name="cash-outline"></ion-icon>
+                <div>
+                    <h4>14 Days Return</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!                       
+                    </p>
+                </div>
+            </div>
+        </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="left">
+            <div class="promotion about-box">
+                <img src="https://images.unsplash.com/photo-1585218356055-e1bbc5891162?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="description">
+                <h4>Promotion & Discount</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, tempore.
+                </p>
+                <a href="#"
+                >Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            </div>
+            <div class="style about-box">
+                <img src="https://images.unsplash.com/photo-1633464130613-0a9154299ac2?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="description">
+                <h4>Trending Style</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, tempore.
+                </p>
+                <a href="#"> Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="collection about-box">
+                <img src="https://images.unsplash.com/photo-1546672657-168c53521a5f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="description">
+                    <h4>Spring Collection</h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, tempore.
+                    </p>
+                    <a href="#">Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </div>
+            </div>
+            <div class="discovery about-box">
+                <img src="https://images.unsplash.com/photo-1519027356316-9f99e11d8bac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="description">
+                    <h4>Fashion Discovery</h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, tempore.
+                    </p>
+                    <a href="#"> Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <!-- product filters -->
+    <ul id="product-filters" >
+        <li data-filter = "*" class="filter-active">All</li>
+        <li data-filter = ".filter-women">Women</li>
+        <li data-filter = ".filter-men">Men</li>
+        <li data-filter = ".filter-special">Special</li>
+    </ul>
+
+    <!-- product container -->
+    <div class="product-container">
+        <div class="product-item filter-special">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1586525198428-225f6f12cff5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-women">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1587231717522-18cf880299dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNsb3RoaW5nJTIwbW9kZWxzfGVufDB8MXwwfHx8MA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-men">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1520367745676-56196632073f?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-special">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1514311548104-ae305aac4688?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-men">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-men">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-women">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xvdGhpbmclMjBtb2RlbHMlMjB3b21lbnxlbnwwfDF8MHx8fDA%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-women">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1656074166642-c1c22b309d9a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-women">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1661529260837-f4bb7164fd39?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-men">
+            <span class="hot">HOT</span>
+            <img src="https://plus.unsplash.com/premium_photo-1688497829899-d4e2634b3026?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-women">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1675881149207-4b021be0ecdd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-men">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1623200634250-9b34ce54456e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-special">
+            <span class="hot">HOT</span>
+            <img src="https://plus.unsplash.com/premium_photo-1673502751994-18a012dada51?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-special">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1555617117-08d2a80f6aa9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-special">
+            <span class="hot">HOT</span>
+            <img src="https://plus.unsplash.com/premium_photo-1681276170758-d6ca6e6e276a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        <div class="product-item filter-men">
+            <span class="hot">HOT</span>
+            <img src="https://images.unsplash.com/photo-1618453292507-4959ece6429e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="product-info">
+                <!-- Rating of 5 stars -->
+                <ul class="product-rating">
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                    <li><ion-icon name="star-outline"></ion-icon></li>
+                </ul>
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>
+                <span class="cross">$180.59</span>
+                <span class="price">$125.99</span>  
+                </p>
+            </div>
+        <a href="" class="add-to-bag"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+    </div>
+    <div class="loading-more">
+        <a href="">Explore More <ion-icon name="arrow-forward-outline"></ion-icon> </a>
+    </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="newsletter-box">
+            <ion-icon name="mail-open-outline"></ion-icon>
+            <h4>Sign Up for newsletter</h4>
+        </div>
+        <p>Seasonal Discount from <span class = "discount">20%</span></p>
+        <form mode = "post" action="" onsubmit="return validate()" >
+            <input type="text" name="email" required placeholder="E-mail">
+            <input type="submit">
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="map">
+            <iframe style="border: 0; width: 100%; height: 350px;" 
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.245135079977!2d-118.44251168478107!3d34.064964180602816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0x36027f96b9f6ac23!2sHollywood%20Walk%20of%20Fame!5e0!3m2!1sen!2sus!4v1647407524510!5m2!1sen!2sus" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="info-wrap">
+            <div class="info">
+                <ion-icon name="navigate-circle-outline"></ion-icon>
+                <h4>Location:</h4>
+                <p>123 Baker Street <br> 
+                    Bihar. Syeria 420
+                </p>
+            </div>
+                <div class="info">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <h4>E-mail</h4>
+                    <p>info@example.com <br> 
+                       contact@example.com
+                    </p>
+                </div>
+            <div class="info">
+                <ion-icon name="call-outline"></ion-icon>
+                <h4>Call:</h4>
+                <p>1234567890 <br> 
+                   0987654321
+                </p>
+            </div>
+        </div>
+        <form method = "post" action="squlinter.php" class="contact-form">
+            <div class="form-group">
+                <input type="text" name = "username" required placeholder="Your Full Name">
+                <input type="email" name = "email" required placeholder="Your E-Mail">
+            </div>
+            <div class="form-group">
+                <input type="text" name = "subject" required placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea type = "text" name="message" rows="5" placeholder="Message"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+</main>   
+    <footer>
+        <ul class="sci">
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a  class="share" href="#">
+            <ion-icon name="share-social-outline"></ion-icon></a>
+            </li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="">Store Locations</a></li>
+            <li><a href="">Opening Hours</a></li>
+            <li><a href="">Privacy Terms</a></li>
+        </ul>
+        <div class="ask-us">
+            <p>Question?</p>
+            <a href="" class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>
+            </a>
+        </div>
+    </footer>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" onclick="scrollToTop();"><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+<!--The order of script is really important, they are not random  -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="isotope.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
